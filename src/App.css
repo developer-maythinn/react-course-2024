@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.products-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.products-container .item-wrapper{
+  margin-top: 40px;
+  /* flex-basis: 33.33%; */
+}
