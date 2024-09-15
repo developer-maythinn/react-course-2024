@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       
+      .container {
+        max-width: 650px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: 25% 25% 50%; */
+        /* grid-template-columns: 1fr 2fr 6fr; total 9fr because it has 9 elements */
+
+        /* grid-auto-rows: 200px; */
+        /* grid-auto-rows: minmax(200px, auto); */
+
+        /* grid-template-rows: 200px 400px 100px; */
+        /* grid-template-rows: repeat(3, 100px); */
+        grid-template-rows: repeat(3, minmax(100px, auto));
+        grid-gap: 10px;
+      }
+      .container div {
+        padding: 20px;
+      }
+      .container div:nth-child(even) {
+        background-color: rgb(187, 46, 234);
+      }
+      .container div:nth-child(odd) {
+        background-color: rgb(95, 228, 69);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum explicabo
+        dolores sed illo quas nemo voluptatum vero obcaecati, quasi adipisci
+        reiciendis quod tenetur. Alias et in autem quidem commodi ducimus?
+      </div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* "aside . main main"
+        "nav . main main" */
+      @media screen and (min-width: 760px) {
+        .container {
+          max-width: 960px;
+          margin: 0 auto;
+          text-align: center;
+          display: grid;
+          gap: 10px;
+          grid-template-columns: repeat(4, 1fr);
+          grid-auto-rows: minmax(100px, auto);
+          grid-template-areas:
+            "header header header header"
+            "aside aside main main"
+            "nav nav main main"
+            "section section section section"
+            "section section section section"
+            "footer footer footer footer";
+        }
+      }
+
+      .container > * {
+        background-color: blueviolet;
+        padding: 20px;
+        color: #fff;
+      }
+      header {
+        grid-area: header;
+      }
+      main {
+        grid-area: main;
+      }
+      section {
+        grid-area: section;
+      }
+      aside {
+        grid-area: aside;
+      }
+      nav {
+        grid-area: nav;
+      }
+      footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <main>Main</main>
+      <section>Section</section>
+      <aside>Aside</aside>
+      <nav>Nav</nav>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
