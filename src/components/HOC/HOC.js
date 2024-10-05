@@ -1,4 +1,5 @@
 import React from "react";
+import MyForm from "../CustomHook/MyForm";
 
 // Higher-Order Component (HOC)
 export const withBlueBackground = (WrappedComponent) => {
@@ -16,6 +17,7 @@ const HelloWorld = () => {
   return (
     <>
       <h1>Hello, World!</h1>
+      <MyForm />
     </>
   );
 };
