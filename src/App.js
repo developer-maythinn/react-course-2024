@@ -1,14 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
-import UseReducerShowHide from "./components/UseReducerShowHide";
 import { Route, Routes } from "react-router-dom";
 import ProductsList from "./pages/productsList";
 import ProductDetail from "./pages/productDetail";
 import CartList from "./pages/cartList";
-import CRUD from "./components/CRUD/CRUD";
 import CustomHook from "./components/CustomHook/CustomHook";
 import HOC from "./components/HOC/HOC";
-import Test from "./components/HOC/Test";
+import Hooks from "./pages/hooks";
+import HookDetail from "./pages/hooks/hookDetail";
 
 function App() {
   return (
@@ -19,11 +17,12 @@ function App() {
         <Route path="/products" element={<ProductsList />}></Route>
         <Route path="/products/:id" element={<ProductDetail />}></Route>
         <Route path="/cart" element={<CartList />}></Route>
-        <Route path="/crud" element={<CRUD />}></Route>
+
         <Route path="/custom-hook" element={<CustomHook />}></Route>
         <Route path="/hoc" element={<HOC />}></Route>
+        <Route path="/hooks" element={<Hooks />}></Route>
+        <Route path="/hooks/:id" element={<HookDetail />}></Route>
       </Routes>
-      <Test />
     </div>
   );
 }

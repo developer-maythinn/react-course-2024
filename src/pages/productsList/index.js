@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 function ProductsList() {
   const { products, loading } = useContext(ShoppingCartContext);
   const navigate = useNavigate();
+  
   function handleViewDetail(currentId) {
     navigate(`/products/${currentId}`);
   }
