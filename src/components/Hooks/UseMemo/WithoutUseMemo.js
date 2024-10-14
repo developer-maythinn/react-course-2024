@@ -15,9 +15,10 @@ function WithoutUseMemo() {
 
   // Filtering and sorting the list of products without useMemo
   const filteredProducts = products
-    .filter((product) =>
-      product.name.toLowerCase().includes(searchTerm.toLowerCase())
-    )
+    .filter((product) => {
+      console.log("Filtering and sorting products...");
+      return product.name.toLowerCase().includes(searchTerm.toLowerCase());
+    })
     .sort((a, b) =>
       sortAsc ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)
     );

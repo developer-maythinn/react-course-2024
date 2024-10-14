@@ -23,6 +23,9 @@ function Hooks() {
         <li>
           <Link to="/hooks/useMemo">Use Memo</Link>
         </li>
+        <li>
+          <Link to="/hooks/useCallback">Use Callback</Link>
+        </li>
       </ul>
     </>
   );

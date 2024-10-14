@@ -1,0 +1,1 @@
+useCallback is a React hook that memoizes a function. This means that it returns a memoized version of the function, which is only recreated when its dependencies change. This can be beneficial in situations where the function is expensive to compute or is passed as a prop to optimized components like React.memo.
