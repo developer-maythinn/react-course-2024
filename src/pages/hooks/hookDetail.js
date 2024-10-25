@@ -19,6 +19,8 @@ import WithoutUseCallbackProduct from "../../components/Hooks/UseCallback/Withou
 import UseCallbackProduct from "../../components/Hooks/UseCallback/UseCallbackProduct";
 import AgeChild from "../../components/Hooks/UseReducer/AgeChild";
 import Counter from "../../components/Hooks/UseCallback/Counter";
+import APIData from "../../components/Hooks/UseEffect/APIData";
+import WithAxios from "../../components/Hooks/UseEffect/WithAxios";
 // import Clock from "../../components/Hooks/UseEffect/Clock";
 
 function HookDetail() {
@@ -44,7 +46,11 @@ function HookDetail() {
       ) : id === "useContext" ? (
         <ComponentA />
       ) : id === "useEffect" ? (
-        <>{/* <Clock /> */}</>
+        <>
+          {/* <Clock /> */}
+          <APIData />
+          <WithAxios />
+        </>
       ) : id === "useReducer" ? (
         <>
           {<AgeChild />}
